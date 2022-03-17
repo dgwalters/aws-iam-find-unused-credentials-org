@@ -35,6 +35,8 @@ This code is a sample and should not be used in a Production Environment. Please
 
 7. Create a Test Event using the default "Hello World" template. You can leave everything as default.
 
-8. Run Test and view the resulting log files. You should see the list of AWS Accounts being evaluated, the number of user accounts being evaluated in each account and, once all accounts have been evaluated, a list of user accounts and their respective AWS Accounts that have either never been logged into or that have not been logged into in the number of days specified in step 5
+8. Run Test and view the resulting log files. You should see the list of AWS Accounts being evaluated, the number of user accounts being evaluated in each account and, once all accounts have been evaluated, a list of user accounts and their respective AWS Accounts that have either never been logged into or that have not been logged into in the number of days specified in step 5.
 
-9. When you're ready, complete the code by having the payload "action queue" on line 175 sent somewhere useful. The code as-is just prints the contents to the log file.
+9. You will almost certainly need to increase the timeout on the Lambda function to something more sensible. You can speed the function up by increasing the memory allocation. It doesn't need more memory but more memory = more CPU
+
+10. When you're ready, complete the code by having the payload "action queue" on line 175 sent somewhere useful. The code as-is just prints the contents to the log file.
