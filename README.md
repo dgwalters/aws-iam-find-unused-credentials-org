@@ -24,7 +24,7 @@ This code is a sample and should not be used in a Production Environment. Please
   - "sts:AssumeRole"
     - "Resource": "arn:aws:iam::*:role/[role-to-be-assumed]
 
-4. Upload the "lambda_function.zip" file to the Lambda function you have created. This will create 2 files inside the function: lambda_function.py and aws_partitions.py
+4. Upload the "lambda_function.zip" file to the Lambda function you have created. This will create 1 file inside the function: lambda_function.py
 
 5. Update lambda_function.py with the following:
   - Line 35: replace the ou_id with your own OrgId
