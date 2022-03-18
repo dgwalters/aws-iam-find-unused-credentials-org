@@ -27,9 +27,9 @@ This code is a sample and should not be used in a Production Environment. Please
 4. Upload the "lambda_function.zip" file to the Lambda function you have created. This will create 2 files inside the function: lambda_function.py and aws_partitions.py
 
 5. Update lambda_function.py with the following:
-  - Line 36: replace the ou_id with your own OrgId
-  - Line 120: Replace the "5" with the number of days you deem enough to mark a role as no longer used
-  - Line 186: replace the iam_assumed_role_name with the assumed role you created in step 1
+  - Line 35: replace the ou_id with your own OrgId
+  - Line 119: Replace the "5" with the number of days you deem enough to mark a role as no longer used
+  - Line 185: replace the iam_assumed_role_name with the assumed role you created in step 1
 
 6. Deploy the function
 

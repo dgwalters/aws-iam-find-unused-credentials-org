@@ -15,7 +15,6 @@ import os
 import logging
 import datetime
 import dateutil
-from aws_partitions import get_partition_for_region
 
 # setup script logging
 log = logging.getLogger()
@@ -187,11 +186,10 @@ def get_account_session(aws_account_id):
 
     my_session = boto3.session.Session()
     my_region = my_session.region_name
-    partition = get_partition_for_region(my_region)
 
     # Call the assume_role method of the STSConnection object and pass the
     # role ARN and a role session name.
-    roleArnString = f"arn:{partition}:iam::{aws_account_id}:" \
+    roleArnString = f"arn:aws:iam::{aws_account_id}:" \
                     f"role/{iam_assumed_role_name}"
 
     try:
